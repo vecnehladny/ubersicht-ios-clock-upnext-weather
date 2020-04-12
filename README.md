@@ -4,13 +4,13 @@ A simple iOS styled widget section for Übersicht. The reason of its creation wa
 ![Screenshot](ScreenShot.png)
 
 ## Features
-** Clock **
+**Clock**
 This one shows accurate time and Date as well
 
-** Up next **
+**Up next**
 Displays next events in your calendar
 
-** Weather **
+**Weather**
 Displays weather information such as temperatur, chance of rain, condition and also wind speed.
 
  
