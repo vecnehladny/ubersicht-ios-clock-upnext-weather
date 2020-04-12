@@ -5,12 +5,15 @@ A simple iOS styled widget section for Übersicht. The reason of its creation wa
 
 ## Features
 **Clock**
+
 This one shows accurate time and Date as well
 
 **Up next**
+
 Displays next events in your calendar
 
 **Weather**
+
 Displays weather information such as temperatur, chance of rain, condition and also wind speed.
 
  
@@ -28,6 +31,7 @@ git clone https://github.com/vecnehladny/ubersicht-ios-clock-upnext-weather ~/Li
 brew install ical-buddy
 ```
 2. Account at [OpenWeather](https://openweathermap.org) and also API key
+3. Set up an interaction shortcut in Übersicht Preferences, so you can scroll in widgets
 
 ## Customization
 You can do some basic customizations in the each of the widgets files. There is a description so feel free to play around. Or just dig into the files and come up with something of your own.
