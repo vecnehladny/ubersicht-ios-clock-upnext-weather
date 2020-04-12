@@ -22,6 +22,13 @@ git clone https://github.com/vecnehladny/ubersicht-ios-clock-upnext-weather ~/Li
 ```
 3. Set up variables for Calendar and Weather
 
+## Requirements
+1. [icalBuddy](https://github.com/ali-rantakari/icalBuddy)
+```
+brew install ical-buddy
+```
+2. Account at [OpenWeather](https://openweathermap.org) and also API key
+
 ## Customization
 You can do some basic customizations in the each of the widgets files. There is a description so feel free to play around. Or just dig into the files and come up with something of your own.
 
