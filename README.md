@@ -16,7 +16,7 @@ Displays weather information such as temperatur, chance of rain, condition and a
  
 ## Instalation
 1. Download and install Übersicht from their [website](http://tracesof.net/uebersicht/)
-2. Clone this repository or download a [zip file](ubersicht-ios-clock-upnext-weather.zip)
+2. Clone this repository or download a [zip file](ubersicht-ios-clock-upnext-weather.widget.zip)
 ```
 git clone https://github.com/vecnehladny/ubersicht-ios-clock-upnext-weather ~/Library/Application\ Support/Übersicht/widgets/ubersicht-ios-clock-upnext-weather/
 ```

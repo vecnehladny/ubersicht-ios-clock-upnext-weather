@@ -24,7 +24,7 @@ update: (output) ->
     console.log(weatherData)
 
     inner = ""
-    inner += "<header><img src='ubersicht-ios-clock-upnext-weather/icons/weather.png' alt='icon'></img><div class='widgetName'>WEATHER</div></header>"
+    inner += "<header><img src='ubersicht-ios-clock-upnext-weather.widget/icons/weather.png' alt='icon'></img><div class='widgetName'>WEATHER</div></header>"
 
     inner += "<div class='weatherBox'>" 
     
@@ -36,7 +36,7 @@ update: (output) ->
         windSpeed = Math.round(weatherData.list[i].wind.speed * 10) / 10
         icon = weatherData.list[i].weather[0].icon
 
-        inner += "<div class='city'><div class='leftBox'><img src='ubersicht-ios-clock-upnext-weather/icons/weather/#{icon}.svg' alt='#{icon}'></img></div><div class='middleBox'><div class='cityName'>"
+        inner += "<div class='city'><div class='leftBox'><img src='ubersicht-ios-clock-upnext-weather.widget/icons/weather/#{icon}.svg' alt='#{icon}'></img></div><div class='middleBox'><div class='cityName'>"
         inner += city
         inner += "</div><div class='condition'>"
         inner += condition

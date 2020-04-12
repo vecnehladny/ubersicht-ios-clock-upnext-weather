@@ -146,7 +146,7 @@ update: (output, domEl) ->
         lines[i].event = {"name":name,"location":location,"time":time}
 
     inner = ''
-    inner += "<header><img src='ubersicht-ios-clock-upnext-weather/icons/calendar.png' alt='icon'></img><div class='widgetName'>UP NEXT</div></header>"
+    inner += "<header><img src='ubersicht-ios-clock-upnext-weather.widget/icons/calendar.png' alt='icon'></img><div class='widgetName'>UP NEXT</div></header>"
     today = []
     tomorrow = []
 
