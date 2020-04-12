@@ -4,7 +4,7 @@ calendars = [
     {name:"prednasky",color:"gold"},
     {name:"cvika",color:"mediumseagreen"},
     {name:"Sviatky na Slovensku",color:"mediumpurple"},
-    {name:"deadline",color:"mediumpurple"}
+    {name:"zadania/zapocty/deadlines",color:"crimson"}
 ]
 
 #Default color of calendar
@@ -128,6 +128,8 @@ update: (output, domEl) ->
 
     lines = output.split('• ')
     lines = lines.map((str) => ({event:str}))
+    
+    console.log(lines)
 
     for i in [0...lines.length]
         lines[i].event = lines[i].event.split('\n')
