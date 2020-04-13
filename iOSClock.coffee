@@ -61,6 +61,7 @@ style: (->
       bottom 0
       left 50%
       transform: translate(-50%,0)
+      text-shadow: 0px 0px 20px rgba(0,0,0,0.8)   
     
     #simpleClock .clock
       margin-bottom: -5px

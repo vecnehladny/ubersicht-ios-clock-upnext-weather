@@ -1,3 +1,6 @@
+#mode of widget (light)
+mode = "dark"
+
 #api Key from OpenWeatherMap API
 apiKey = "dfa02a9fcf5fd313582d592f8953b972"
 
@@ -16,7 +19,7 @@ refreshFrequency: '15m'
 #======================================================================
 
 render: (output) -> """
-  <div id='weather'>#{output}</div>
+  <div id='weather' class='#{mode}'>#{output}</div>
 """
 
 update: (output) ->
@@ -78,9 +81,21 @@ style: """
         -webkit-box-shadow: 10px 10px 47px 0px rgba(0,0,0,0.54)
         letter-spacing: 1px
 
+    #weather.dark
+        background-color: rgba(0,0,0,0.45)
+
+    #weather.light
+        background-color: rgba(255,255,255,0.5)
+        color: black
+
+    #weather.light header
+        color: rgba(50,50,50,0.8)
+
+    #weather.dark header
+        color: rgba(200,200,200,0.8)
+
     header 
         padding: 10px 0 10px 0
-        color: rgba(200,200,200,0.8)
         display: flex
         flex-direction: row
         position: fixed

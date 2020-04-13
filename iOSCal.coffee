@@ -7,6 +7,9 @@ calendars = [
     {name:"zadania/zapocty/deadlines",color:"crimson"}
 ]
 
+#mode of widget (light)
+mode = "dark"
+
 #Default color of calendar
 defColor = "white"
 
@@ -34,7 +37,6 @@ style: """
 
     #calendar
         border-radius: 10px
-        background-color: rgba(0,0,0,0.45)
         -webkit-backdrop-filter: blur(20px)
         width: 410px
         height: 200px
@@ -46,9 +48,21 @@ style: """
         -webkit-box-shadow: 10px 10px 47px 0px rgba(0,0,0,0.54)
         letter-spacing: 1px
 
+    #calendar.dark
+        background-color: rgba(0,0,0,0.45)
+
+    #calendar.light
+        background-color: rgba(255,255,255,0.5)
+        color: black
+
+    #calendar.light header, #calendar.light .leftBox .time .to, #calendar.light .rightBox .location
+        color: rgba(50,50,50,0.8)
+
+    #calendar.dark header, #calendar.dark .leftBox .time .to, #calendar.dark .rightBox .location
+        color: rgba(200,200,200,0.8)
+
     header 
         padding: 10px 0 10px 0
-        color: rgba(200,200,200,0.8)
         display: flex
         flex-direction: row
         position: fixed
@@ -97,12 +111,10 @@ style: """
     .leftBox .time .to
         font-size: 12px;
         line-height: 20px
-        color: rgba(200,200,200,0.8)
 
     .rightBox .location
         font-size: 12px
         line-height: 20px
-        color: rgba(200,200,200,0.8)
 
     .nothing 
         text-align: center
@@ -113,7 +125,7 @@ style: """
 """
 
 # Initial render
-render: (output) -> """<div id='calendar'>#{output}</div>"""
+render: (output) -> """<div id='calendar' class='#{mode}'>#{output}</div>"""
 
 # Update when refresh occurs
 update: (output, domEl) ->
@@ -128,8 +140,6 @@ update: (output, domEl) ->
 
     lines = output.split('• ')
     lines = lines.map((str) => ({event:str}))
-    
-    console.log(lines)
 
     for i in [0...lines.length]
         lines[i].event = lines[i].event.split('\n')
