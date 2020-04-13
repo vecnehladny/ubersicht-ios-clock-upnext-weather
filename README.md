@@ -34,7 +34,7 @@ brew install ical-buddy
 3. Set up an interaction shortcut in Übersicht Preferences, so you can scroll in widgets
 
 ## Customization
-You can do some basic customizations in the each of the widgets files. There is a description so feel free to play around. Or just dig into the files and come up with something of your own.
+There is Light/Dark mode switch. You can do some basic customizations in the each of the widgets files. There is a description so feel free to play around. Or just dig into the files and come up with something of your own.
 
 ## Enjoy!
 Fork it, learn with it, do whatever with it. Just remember to have fun!
