@@ -1,8 +1,3 @@
-```diff
-- In the meantime it's not working on Catalina and Mojave
-- I'm working on a fix 
-```
-
 # iOS widget section
 A simple iOS styled widget section for Übersicht. The reason of its creation was that i'm used to those widgets on my iPhone so i decided to recreate them for my computer. And also fun little project in JavaScript/CoffeScript.
 
@@ -25,13 +20,17 @@ Displays weather information such as temperatur, chance of rain, condition and a
 ## Instalation
 1. Download and install Übersicht from their [website](http://tracesof.net/uebersicht/)
 2. Clone this repository or download a [zip file](ubersicht-ios-clock-upnext-weather.widget.zip)
-```
-git clone https://github.com/vecnehladny/ubersicht-ios-clock-upnext-weather ~/Library/Application\ Support/Übersicht/widgets/ubersicht-ios-clock-upnext-weather/
-```
-3. Set up variables for Calendar and Weather
+3. Install icalBuddy
+4. Create account on OpenWeather, if you don't have one, and generate an API key
+5. Find IDs of cities which you want to add to you weather [here](http://bulk.openweathermap.org/sample/city.list.json.gz)
+6. Set up variables for Calendar and Weather
 
 ## Requirements
 1. [icalBuddy](https://github.com/ali-rantakari/icalBuddy)
+
+if you are runnig newer macOS, such as Catalina, you need to install [this](https://github.com/DavidKaluta/icalBuddy64/releases) version
+
+otherwise
 ```
 brew install ical-buddy
 ```
