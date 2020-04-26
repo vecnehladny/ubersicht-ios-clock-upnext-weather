@@ -1,3 +1,8 @@
+```diff
+- In the mean time it's not working on Catalina and Mojave
+- I'm working on a fix 
+```
+
 # iOS widget section
 A simple iOS styled widget section for Übersicht. The reason of its creation was that i'm used to those widgets on my iPhone so i decided to recreate them for my computer. And also fun little project in JavaScript/CoffeScript.
 
