@@ -1,5 +1,5 @@
 ```diff
-- In the mean time it's not working on Catalina and Mojave
+- In the meantime it's not working on Catalina and Mojave
 - I'm working on a fix 
 ```
 
