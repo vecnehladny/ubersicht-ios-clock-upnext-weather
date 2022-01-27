@@ -2,7 +2,7 @@
 mode = "dark"
 
 #api Key from OpenWeatherMap API
-apiKey = "dfa02a9fcf5fd313582d592f8953b972"
+apiKey = ""
 
 #list of city IDs from API database
 cityList = "3060972,724443,723736"
@@ -12,7 +12,7 @@ units = "metric"
 
 
 command: "curl -s 'http://api.openweathermap.org/data/2.5/group?id=#{cityList}&units=#{units}&appid=#{apiKey}'"
-#http://api.openweathermap.org/data/2.5/group?id=7046,7049,2008861&units=metric&appid=dfa02a9fcf5fd313582d592f8953b972
+#http://api.openweathermap.org/data/2.5/group?id=7046,7049,2008861&units=metric&appid=
 refreshFrequency: '15m'
 
 #=== DO NOT EDIT AFTER THIS LINE unless you know what you're doing! ===
